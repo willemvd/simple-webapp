@@ -4,4 +4,14 @@
 
 <web-app>
   <display-name>Simple webapp</display-name>
+
+  <servlet>
+    <servlet-name>stress</servlet-name>
+    <servlet-class>com.github.willemvd.LoadServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>stress</servlet-name>
+    <url-pattern>/stress</url-pattern>
+  </servlet-mapping>
 </web-app>
